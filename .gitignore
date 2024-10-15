@@ -1,0 +1,8 @@
+#Dependency
+node_modules/
+
+#Build Directory
+/dist/
+
+#Cache
+.parcel-cache/

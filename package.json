@@ -1,0 +1,21 @@
+{
+  "name": "react-kancchan",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  }
+}

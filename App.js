@@ -11,6 +11,7 @@ let div = React.createElement("div", { id: "parent" }, [
     React.createElement("h2", { id: "h2" }, "Hello child2 sibling 2"),
   ]),
 ]);
+
 // const h1 = React.createElement("h1", { id: "header" }, "Hello");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(div);

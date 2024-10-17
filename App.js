@@ -1,17 +1,23 @@
 import React from 'react'
-import ReactDOM  from 'react-dom'
+import ReactDOM  from 'react-dom/client'
 
-let div = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { id: "h1" }, "Hello  Sibling 1"),
-    React.createElement("h2", { id: "h2" }, "Hello Sibling 2"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", { id: "h1" }, "Hello child2 sibling 1"),
-    React.createElement("h2", { id: "h2" }, "Hello child2 sibling 2"),
-  ]),
-]);
+const title = 'My App'
+const header = React.createElement('div',{id:'Heading'},'Helo React App by createElement')
+console.log(header)
 
-// const h1 = React.createElement("h1", { id: "header" }, "Hello");
+const jsxHeader = <h1>Hello React</h1>
+console.log(jsxHeader)
+
+const HeadingComponent = ()=> <h1>Heading 1</h1>
+
+const DivComponent = () => (
+  <div id="container">
+    {title}
+    <HeadingComponent/>
+    {HeadingComponent() }
+    <h1>Hello React First App</h1>
+  </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(div);
+root.render(<DivComponent/>);
